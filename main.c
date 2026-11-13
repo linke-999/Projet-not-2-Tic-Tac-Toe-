@@ -1,13 +1,22 @@
 #include <stdio.h>
+#include "fonctions.h"
 
 int main(void) {
 
+    char * ligne[3][3] = {
+        {" ", " ", " "}, // Ligne 0
+        {" ", " ", " "}, // Ligne 1
+        {" ", " ", " "}
+    };
 
-    
-    printf(" %d | %d | %d\n"
+    ajout(ligne);
+
+    printf(" %s | %s | %s\n"
            "---+---+---\n"
-           " %d | %d | %d\n"
+           " %s | %s | %s\n"
            "---+---+---\n"
-           " %d | %d | %d\n",
-           1, 2, 3, 4, 5, 6, 7, 8, 9);
-}
+           " %s | %s | %s\n",
+            ligne[0][0], ligne[0][1], ligne[0][2],
+            ligne[1][0],ligne[1][1], ligne[1][2],
+            ligne[2][0], ligne[2][1], ligne[2][2]);
+    }

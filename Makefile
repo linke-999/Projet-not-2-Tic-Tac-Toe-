@@ -2,7 +2,8 @@
 
 NAME = morpions
 
-SRCS = main.c 
+SRCS = main.c \
+    ajout.c
 
 
 all: $(NAME)
