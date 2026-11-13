@@ -8,7 +8,9 @@ int main(void) {
         {" ", " ", " "}, // Ligne 1
         {" ", " ", " "}
     };
-
+    while (1 != 0)
+    {
+    
     ajout(ligne);
 
     printf(" %s | %s | %s\n"
@@ -20,3 +22,4 @@ int main(void) {
             ligne[1][0],ligne[1][1], ligne[1][2],
             ligne[2][0], ligne[2][1], ligne[2][2]);
     }
+}

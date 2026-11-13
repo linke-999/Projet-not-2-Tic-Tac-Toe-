@@ -3,7 +3,8 @@
 NAME = morpions
 
 SRCS = main.c \
-    ajout.c
+    ajout.c \
+	verif_entree.c
 
 
 all: $(NAME)
