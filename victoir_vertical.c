@@ -8,7 +8,7 @@ int victoir_vertical(char * ligne[3][3]){
     {
         while (j != 3)
         {
-            if (ligne[i][j][0] == 'X'){
+            if (ligne[j][i][0] == 'X'){
 
                 t++;
 
