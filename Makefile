@@ -6,7 +6,8 @@ SRCS = main.c \
     ajout.c \
 	verif_entree.c \
 	victoir_test.c \
-	victoir_horizontal.c
+	victoir_horizontal.c \
+	int victoir_vertical.c
 
 
 all: $(NAME)
