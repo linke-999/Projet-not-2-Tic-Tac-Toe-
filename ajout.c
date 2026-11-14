@@ -2,18 +2,14 @@
 #include "fonctions.h"
 
 char * ajout(char * ligne[3][3]){
-    int i = 0;
-    int j = 0;
+
+
+
     int int_user;
     while(1 != 0){
         
         printf("choisis un nombre entre 0 est 8 \n");
         scanf("%d" , &int_user);
-        
-        int nulle = null_test(ligne);
-        if (nulle == 1){
-            return ligne[3][3];
-        }
 
         if (int_user == 0 || int_user == 1 || int_user == 2){
             

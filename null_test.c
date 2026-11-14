@@ -18,10 +18,7 @@ int null_test(char * ligne[3][3]){
                 continue;
             }
             
-            if (t == 0)
-            {
-                return 3;
-            }
+            
             
             j++;
 
@@ -30,5 +27,9 @@ int null_test(char * ligne[3][3]){
         i++;
         
     }
+    if (t == 0)
+        {
+            return 3;
+        }
     return 0;
 }

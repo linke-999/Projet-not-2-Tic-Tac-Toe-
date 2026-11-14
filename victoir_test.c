@@ -7,19 +7,19 @@ int victoir_test(char * ligne[3][3]){
     int vh = victoir_horizontal(ligne);
     
     if (vh != 0){
-        return vh;
+        //return vh;
     }
 
     int vv = victoir_vertical(ligne);
     
     if (vv != 0){
-        return vv;
+        //return vv;
     }
 
     int vd = victoir_diagonal(ligne);
 
     if (vd != 0){
-        return vd;
+        //return vd;
     }
 
     int nulle = null_test(ligne);
