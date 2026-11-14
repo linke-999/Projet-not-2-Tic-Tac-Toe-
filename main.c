@@ -4,16 +4,16 @@
 int main(void) {
 
     char * ligne[3][3] = {
-        {" ", " ", " "}, // Ligne 0
-        {" ", " ", " "}, // Ligne 1
-        {" ", " ", " "}
+        {"O", " ", " "}, // Ligne 0
+        {"X", "O", "O"}, // Ligne 1
+        {"O", "X", "X"}
     };
     while (1 != 0)
     {
     
     ajout(ligne);
     int v = victoir_test(ligne);
-    
+
     
 
     printf(" %s | %s | %s\n"
@@ -27,6 +27,15 @@ int main(void) {
 
     if (v == 1){
         printf("bravo tu a gagner \n");
+        return 0;
+        }
+    if (v == 2){
+        printf("dommage tu a perdue \n");
+        return 0;
+        }
+    
+    if (v == 3){
+        printf("c'est un match null \n");
         return 0;
         }
     }
