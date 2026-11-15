@@ -1,25 +1,25 @@
 #include <stdio.h>
 #include "fonctions.h"
 
-int victoir_test(char * ligne[3][3]){
+int victoir_test(char * ligne[3][3], int bot_ou_user){
 
 
-    int vh = victoir_horizontal(ligne);
+    int vh = victoir_horizontal(ligne, bot_ou_user);
     
     if (vh != 0){
-        //return vh;
+        return vh;
     }
 
-    int vv = victoir_vertical(ligne);
+    int vv = victoir_vertical(ligne, bot_ou_user);
     
     if (vv != 0){
-        //return vv;
+        return vv;
     }
 
-    int vd = victoir_diagonal(ligne);
+    int vd = victoir_diagonal(ligne, bot_ou_user);
 
     if (vd != 0){
-        //return vd;
+        return vd;
     }
 
     int nulle = null_test(ligne);

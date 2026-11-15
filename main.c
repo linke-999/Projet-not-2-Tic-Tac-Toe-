@@ -12,18 +12,19 @@ int main(void) {
     {
     
     ajout(ligne);
-    int v = victoir_test(ligne);
+    int v = victoir_test(ligne, 1);
+    affichage(ligne);
+
+    if (v == 0){
+        bot(ligne);
+        v = victoir_test(ligne, 0);
+        printf("le bot a jouer \n");
+        affichage(ligne);
+    }
 
     
 
-    printf(" %s | %s | %s\n"
-           "---+---+---\n"
-           " %s | %s | %s\n"
-           "---+---+---\n"
-           " %s | %s | %s\n",
-            ligne[0][0], ligne[0][1], ligne[0][2], 
-            ligne[1][0],ligne[1][1], ligne[1][2],
-            ligne[2][0], ligne[2][1], ligne[2][2]);
+    printf("%d", v);
 
     if (v == 1){
         printf("bravo tu a gagner \n");

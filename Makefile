@@ -9,7 +9,9 @@ SRCS = main.c \
 	victoir_horizontal.c \
 	victoir_vertical.c \
 	victoir_diagonal.c \
-	null_test.c
+	null_test.c \
+	bot.c \
+	affichage.c
 
 
 all: $(NAME)
