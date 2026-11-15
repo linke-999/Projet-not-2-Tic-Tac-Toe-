@@ -24,8 +24,6 @@ int main(void) {
 
     
 
-    printf("%d", v);
-
     if (v == 1){
         printf("bravo tu a gagner \n");
         return 0;
