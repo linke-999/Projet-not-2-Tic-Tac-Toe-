@@ -22,8 +22,6 @@ int main(void) {
         affichage(ligne);
     }
 
-    
-
     if (v == 1){
         printf("bravo tu a gagner \n");
         return 0;

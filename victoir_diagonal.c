@@ -31,5 +31,27 @@ int victoir_diagonal(char * ligne[3][3],  int bot_ou_user){
         j++;
         i++;
     }
+    i = 0;
+    j--;
+    t = 0;
+
+    while (i != 3)
+    {
+        if (ligne[j][i][0] == *x_o){
+            t++;
+            
+            if (t == 3 && x_o == "X")
+            {
+                return 1;
+            }
+            if (t == 3 && x_o == "O")
+            {
+                return 2;
+            }
+            
+        }
+        j--;
+        i++;
+    }
     return 0;
 }

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "fonctions.h"
 
 int victoir_test(char * ligne[3][3], int bot_ou_user){

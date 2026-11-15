@@ -1,4 +1,3 @@
-#include <stdio.h>
 int victoir_horizontal(char * ligne[3][3], int bot_ou_user){
 
     int i = 0;
