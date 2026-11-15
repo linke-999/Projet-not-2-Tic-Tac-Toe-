@@ -22,7 +22,7 @@ char * ajout(char * ligne[3][3]){
 
             printf("la case %d est deja prise \n" , int_user);
             int c;
-            while ((c = getchar()) != '\n' && c != EOF); //a expliquer dans le aide parseque sa resemble a de l'ia tellment c'est genial 
+            while ((c = getchar()) != '\n' && c != EOF); // opt=+
             continue;    
         }
 
